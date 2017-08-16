@@ -13,11 +13,11 @@ founded addresses and the corresponding analog gamepad stick values for each gam
 
 The whole process is divided into two steps:
 
-- MemoryScan.
+- **MemoryScan.**
   At this stage, we scan the whole game memory and look for bytes that change when a player a rotating. Then we examine and find
   the valid ranges for data stored in corresponding memory. This gives us enough information to recognize yaw/pitch values stored in memory.
 
-- Visualization
+- **Visualization.**
   For create a great visualization, we need to know about the timing of every game frame. That would help us to match the values
   read from memory and the game frames. For this purposes, we use a non-intrusive D3D hook using ETW API. The yaw and pitch read
   from the game memory, the gamepad stick values and the corresponding game frames are then drawing in real-time as charts.
