@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{67046a04-1dc3-4704-93ac-3e53fc0d853c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PugiXML">
+      <UniqueIdentifier>{44f58c3a-bb02-48e6-8f6a-3283dee32760}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Source\BroadPhase\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\Common\utils.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ThirdParty\pugixml-1.8\src\pugixml.cpp">
+      <Filter>PugiXML</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Source\Common\utils.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\pugixml-1.8\src\pugiconfig.hpp">
+      <Filter>PugiXML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ThirdParty\pugixml-1.8\src\pugixml.hpp">
+      <Filter>PugiXML</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

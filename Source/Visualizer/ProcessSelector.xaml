@@ -1,0 +1,22 @@
+﻿<Window x:Class="Visualizer.ProcessSelector"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Visualizer"
+        mc:Ignorable="d"
+        Title="ProcessSelector" Height="728.5" Width="528" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <ListView x:Name="listView" Margin="10,10,10,30">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="PID" DisplayMemberBinding="{Binding Id}" Width="100"/>
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}" Width="360"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="button" Content="Scan process" HorizontalAlignment="Left" Margin="10,0,0,5" Width="500" Click="scanButton_Click" Height="20" VerticalAlignment="Bottom"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,32 @@
+﻿<Window x:Class="Visualizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        xmlns:local="clr-namespace:Visualizer"
+        mc:Ignorable="d"
+        Title="Aim Acceleration - Visualizer" Height="510" Width="767" Closed="Window_Closed" WindowState="Maximized" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Menu x:Name="menu" Height="18" VerticalAlignment="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="Import MemoryScan XML..." Click="MenuImport_Click"/>
+                <MenuItem Header="Export..." Click="MenuExport_Click"/>
+                <Separator/>
+                <MenuItem Header="Exit" Click="MenuExit_Click"/>
+            </MenuItem>
+            <MenuItem Header="Tools">
+                <MenuItem Header="MemoryScan Process..." HorizontalAlignment="Left" Width="155" Margin="0,0,-15,0" Click="ScanProcess_Click"/>
+            </MenuItem>
+        </Menu>
+
+
+        <oxy:PlotView Margin="10,23,10,31" x:Name="chart">
+
+        </oxy:PlotView>
+        <Button x:Name="captureButton" Content="Start Capture" Margin="0,0,10,6" Click="buttonCapture_Click" HorizontalAlignment="Right" Width="86" Height="20" VerticalAlignment="Bottom"/>
+
+
+
+    </Grid>
+</Window>

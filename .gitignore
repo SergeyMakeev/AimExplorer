@@ -1,0 +1,10 @@
+*.sdf
+*.opendb
+*.user
+*.suo
+Build/Temp/
+Bin/
+Source/Visualizer/obj/
+*.xlsx
+Build/*.xml
+Build/*.txt
